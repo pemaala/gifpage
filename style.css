@@ -1,0 +1,223 @@
+body {
+    background-color:black;
+    height:100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#decouno {
+    position: absolute;
+    top: -28%;
+    right: -35%;
+    z-index: 9999;
+}
+
+#decouno img {
+    max-width: 75%;
+    height: auto;
+}
+
+#decodos {
+    position: absolute;
+    bottom: -25%;
+    left: -25%;
+    z-index: 9999;
+}
+
+#decodos img {
+    max-width: 75%;
+    height: auto;
+}
+
+#decotres {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    z-index: 9999;
+}
+
+#decotres img {
+    max-width: 55%;
+    height: auto;
+}
+
+#decocuatro {
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    z-index: 9999;
+}
+
+#decocuatro img {
+    max-width: 55%;
+    height: auto;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color:rgb(48, 48, 48);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(164, 233, 239);
+  }
+
+#desc {
+    position: relative;
+    height: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    overflow: hidden; 
+}
+
+#desc::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e5e5f7;
+    opacity: 0.1;
+    background-image: repeating-linear-gradient(45deg, #000000 25%, transparent 25%, transparent 75%, #000000 75%, #000000), repeating-linear-gradient(45deg, #000000 25%, #e5e5f7 25%, #e5e5f7 75%, #000000 75%, #000000);
+    background-position: 0 0, 10px 10px;
+    background-size: 20px 20px;
+    z-index: 1;
+}
+
+#desc > * {
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    font-family: "Bebas Neue";
+    font-weight: 400;
+    font-size: 29px;
+    text-transform: uppercase;
+    color: rgb(254, 254, 254);
+}
+
+b {
+    font-weight: normal;
+}
+
+b.uno {
+    color: rgb(254, 214, 255);
+}
+
+b.dos {
+    color: rgb(179, 247, 255);
+}
+
+b.tres {
+    color: rgb(194, 203, 245);
+}
+
+h2 {
+    color: rgb(254, 254, 254);
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: -15px;
+    opacity: 1;
+}
+
+#container {
+    height: 66%;
+    border-top: 1px solid rgb(196, 241, 255);
+    border-bottom: 1px solid rgb(196, 241, 255);
+    display: flex;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 2%;
+}
+
+.nav a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    padding: 10px 10px 10px 20px; /* Uniform padding */
+    position: relative; /* For pseudo-element positioning */
+}
+
+.nav a.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px; /* Width of the border */
+    background: rgb(254,208,251);
+    background: linear-gradient(100deg, rgba(254,208,251,1) 0%, rgba(251,208,204,1) 100%);
+}
+
+.gifscontainer {
+    height: 90%;
+    width: 73%;
+    margin: 2% 2% auto 2%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow-y: scroll;
+}
+
+.gifsbox {
+    height:100%;
+    width:100%;
+}
+
+img {
+    margin: 2px;
+}
+
+#footer {
+    position: relative;
+    height: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    overflow: hidden; 
+}
+
+#footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e5e5f7;
+    opacity: 0.1;
+    background-image: repeating-linear-gradient(45deg, #000000 25%, transparent 25%, transparent 75%, #000000 75%, #000000), repeating-linear-gradient(45deg, #000000 25%, #e5e5f7 25%, #e5e5f7 75%, #000000 75%, #000000);
+    background-position: 0 0, 10px 10px;
+    background-size: 20px 20px;
+    z-index: 1;
+}
+
+#footer > * {
+    position: relative;
+    z-index: 2;
+}
